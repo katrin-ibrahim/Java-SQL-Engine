@@ -11,10 +11,12 @@ following method creates one table only
 
 
 
+
 **2.createIndex**
 following method creates one index – either multidimensional , or single dimension depending on the count of column names passed.
 
 `public void createIndex(String strTableName,String[] strarrColName) throws DBAppException`
+
 
 
 **3. insertIntoTable**
@@ -22,6 +24,7 @@ following method inserts one row only.
 htblColNameValue must include a value for the primary key
 
 `public void insertIntoTable(String strTableName, Hashtable<String,Object> htblColNameValue) throws DBAppException`
+
 
 
 **4. updateTable**
@@ -33,6 +36,7 @@ following method updates one row only
 `public void updateTable(String strTableName,String strClusteringKeyValue, Hashtable<String,Object> htblColNameValue )throws DBAppException`
 
 
+
 **5. deleteFromTable**
 following method could be used to delete one or more rows.
 - htblColNameValue holds the key and value. This will be used in search
@@ -40,6 +44,8 @@ following method could be used to delete one or more rows.
 - htblColNameValue enteries are ANDED together
 - 
 `public void deleteFromTable(String strTableName,Hashtable<String,Object> htblColNameValue) throws DBAppException`
+
+
 
 **6. selectFromTable**
 
